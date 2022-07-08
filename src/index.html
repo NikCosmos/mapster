@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+   @@include('html/head.html',{ "title":"Главная" })
+   <body>
+      @@include('html/header.html',{})
+      <main class="main">
+         <div class="section">
+            <p class="title">GUIDES</p>
+            <ul>
+               <li class="item">
+                  <a target="_blank" href="guides-main-guide.html">Главная</a>
+               </li>
+               <li class="item">
+                  <a target="_blank" href="guides-info-pay.html">Информация о заказе</a>
+               </li>
+               <li class="item">
+                  <a target="_blank" href="guides-tag.html">Теги</a>
+               </li>
+               <li class="item">
+                  <a target="_blank" href="guides-thanks.html">страница Спасибо</a>
+               </li>
+               <li class="item">
+                  <a target="_blank" href="guides-tour-guide-edit-profile.html">Редактировать профиль гида</a>
+               </li>
+               <li class="item">
+                  <a target="_blank" href="guides-tour-guide-profile.html">Профиль гида</a>
+               </li>
+               <li class="item">
+                  <a target="_blank" href="guides-order.html">Мои заказы</a>
+               </li>
+               <li class="item">
+                  <a target="_blank" href="guides-balance.html">Баланс</a>
+               </li>
+               <li class="no">
+                  <ul>
+                     <p class="title">Admin panel</p>
+                     <li class="item">
+                        <a target="_blank" href="adminPanel-main.html">Админка главная</a>
+                     </li>
+                     <li class="item">
+                        <a target="_blank" href="adminPanel-allGuides.html">Все гиды</a>
+                     </li>
+                     <li class="item">
+                        <a target="_blank" href="adminPanel-allExcursions.html">Все экскурсии</a>
+                     </li>
+                     <li class="item">
+                        <a target="_blank" href="adminPanel-profile&excursion.html">Профиль / ЭКСКУРСИИ</a>
+                     </li>
+                     <li class="item">
+                        <a target="_blank" href="adminPanel-excursion&edit.html">Посмотреть/РЕДАКТИРОВАТЬ экскурсиЮ</a>
+                     </li>
+                     <li class="item">
+                        <a target="_blank" href="adminPanel-orders.html">ЗАКАЗЫ</a>
+                     </li>
+                     <li class="item">
+                        <a target="_blank" href="adminPanel-balance-guid.html">Гид баланс экскурсии</a>
+                     </li>
+                     <li class="item">
+                        <a target="_blank" href="adminPanel-full-balance.html">Баланс всех экскурсий</a>
+                     </li>
+                     <li class="item">
+                        <a target="_blank" href="adminPanel-commissions.html">Комисси Мапстер</a>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+      </main>
+      @@include('html/footer.html',{})
+   </body>
+   <style>
+      .section {
+         border: 1px solid #000;
+         margin: 20px 20px;
+         padding: 10px;
+         border-radius: 5px;
+         background-color: #41b619;
+      }
+      .title {
+         font-weight: 600;
+         font-size: 20px;
+      }
+      .item {
+         text-transform: uppercase;
+         font-size: 14px;
+         font-weight: 600;
+      }
+      .item:hover {
+         color: #ffffff;
+      }
+   </style>
+</html>
