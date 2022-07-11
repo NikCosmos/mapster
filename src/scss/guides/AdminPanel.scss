@@ -256,6 +256,7 @@
       display: flex;
       padding: 7px 0px;
       margin-bottom: 5px;
+      gap: 2%;
    }
 
    &__head-item {
@@ -267,24 +268,25 @@
       line-height: 16px;
       letter-spacing: 0.15px;
       &_id {
-         flex: 0 1 55px;
+         flex: 0 0 4.7%;
       }
 
       &_name {
-         flex: 0 1 232px;
+         flex: 0 0 25%;
+         text-align: center;
       }
 
       &_location {
-         flex: 0 1 192px;
+         flex: 0 0 20%;
+         text-align: center;
       }
 
       &_contacts {
-         flex: 0 1 210px;
+         flex: 0 0 22.5%;
       }
 
       &_status {
-         flex: 0 1 180px;
-         justify-content: start;
+         flex: 0 0 19%;
       }
    }
 
@@ -296,6 +298,8 @@
    &__table-body-item {
       display: flex;
       min-height: 55px;
+      gap: 2%;
+      border-bottom: 0.5px solid #707070;
    }
 
    &__body-item {
@@ -306,27 +310,29 @@
       font-size: 14px;
       line-height: 19px;
       letter-spacing: 0.15px;
-      border-bottom: 0.5px solid #707070;
+      word-break: break-all;
+      padding: 10px 0px;
       &_id {
-         flex: 0 1 55px;
+         flex: 0 0 4.7%;
          font-weight: 400;
       }
 
       &_name {
-         flex: 0 1 232px;
+         flex: 0 0 26%;
+         display: flex;
+         justify-content: start;
       }
 
       &_location {
-         flex: 0 1 192px;
+         flex: 0 0 20%;
       }
 
       &_contacts {
-         flex: 0 1 210px;
+         flex: 0 0 22.5%;
       }
 
       &_status {
-         flex: 0 1 180px;
-         max-width: 180px;
+         flex: 0 0 19%;
       }
    }
    &__body-name-content {
@@ -440,6 +446,7 @@
       display: flex;
       padding: 7px 0px;
       margin-bottom: 5px;
+      gap: 2%;
    }
 
    &__head-item {
@@ -452,27 +459,29 @@
       letter-spacing: 0.15px;
 
       &_id {
-         flex: 0 1 50px;
+         flex: 0 0 5.7%;
       }
 
       &_excursion-name {
-         flex: 0 1 295px;
+         flex: 0 0 30%;
+         text-align: center;
       }
 
       &_route {
-         flex: 0 1 110px;
+         flex: 0 0 10%;
       }
 
       &_location {
-         flex: 0 1 100px;
+         flex: 0 0 10%;
+         text-align: center;
       }
 
       &_guide-name {
-         flex: 0 1 210px;
+         flex: 0 0 22%;
       }
 
       &_status {
-         flex: 0 1 110px;
+         flex: 0 0 12.6%;
       }
    }
 
@@ -484,6 +493,8 @@
    &__table-body-item {
       display: flex;
       min-height: 55px;
+      gap: 2%;
+      border-bottom: 0.5px solid #707070;
    }
 
    &__body-item {
@@ -494,30 +505,36 @@
       font-size: 14px;
       line-height: 19px;
       letter-spacing: 0.15px;
-      border-bottom: 0.5px solid #707070;
+      word-break: break-all;
+      padding: 10px 0px;
+
       &_id {
-         flex: 0 1 50px;
+         flex: 0 0 5.7%;
          font-weight: 700;
       }
 
       &_excursion-name {
-         flex: 0 1 295px;
+         flex: 0 0 30%;
+         display: flex;
+         justify-content: start;
       }
 
       &_route {
-         flex: 0 1 110px;
+         flex: 0 0 10%;
       }
 
       &_location {
-         flex: 0 1 100px;
+         flex: 0 0 10%;
       }
 
       &_guide-name {
-         flex: 0 1 210px;
+         flex: 0 0 22%;
+         display: flex;
+         justify-content: start;
       }
 
       &_status {
-         flex: 0 1 110px;
+         flex: 0 0 12.6%;
       }
    }
    &__body-excursion-name-content {
@@ -564,6 +581,7 @@
       display: flex;
       gap: 10px;
       align-items: center;
+      word-break: break-all;
    }
 
    &__body-guide-name-img {
@@ -598,6 +616,7 @@
       display: inline-flex;
       justify-content: space-between;
       align-items: center;
+      gap: 10px;
    }
 }
 //========================================================================================================================================================
@@ -655,6 +674,7 @@
       display: flex;
       padding: 7px 0px;
       margin-bottom: 5px;
+      gap: 2%;
    }
 
    &__head-item {
@@ -667,26 +687,29 @@
       letter-spacing: 0.15px;
 
       &_id {
-         flex: 0 1 35px;
+         flex: 0 0 4%;
       }
 
       &_excursion-name {
-         flex: 0 1 278px;
+         flex: 0 0 30%;
+         text-align: center;
       }
       &_excursion-descr {
-         flex: 0 1 240px;
+         flex: 0 0 26%;
+         text-align: center;
       }
 
       &_route {
-         flex: 0 1 96px;
+         flex: 0 0 9%;
       }
 
       &_location {
-         flex: 0 1 117px;
+         flex: 0 0 12%;
+         text-align: center;
       }
 
       &_status {
-         flex: 0 1 98px;
+         flex: 0 0 9%;
       }
    }
 
@@ -698,6 +721,8 @@
    &__table-body-item {
       display: flex;
       min-height: 55px;
+      gap: 2%;
+      border-bottom: 0.5px solid #707070;
    }
 
    &__body-item {
@@ -708,28 +733,32 @@
       font-size: 14px;
       line-height: 19px;
       letter-spacing: 0.15px;
-      border-bottom: 0.5px solid #707070;
+      word-break: break-all;
       &_id {
-         flex: 0 1 40px;
+         flex: 0 0 4%;
       }
 
       &_excursion-name {
-         flex: 0 1 278px;
+         flex: 0 0 30%;
+         display: flex;
+         justify-content: start;
       }
       &_excursion-descr {
-         flex: 0 1 240px;
+         flex: 0 0 26%;
+         display: flex;
+         justify-content: start;
       }
 
       &_route {
-         flex: 0 1 96px;
+         flex: 0 0 9%;
       }
 
       &_location {
-         flex: 0 1 117px;
+         flex: 0 0 12%;
       }
 
       &_status {
-         flex: 0 1 98px;
+         flex: 0 0 9%;
       }
    }
    &__body-excursion-name-content {
@@ -791,6 +820,7 @@
       display: inline-flex;
       justify-content: space-between;
       align-items: center;
+      gap: 10px;
    }
 }
 
@@ -1978,6 +2008,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
+      gap: 20px 20px;
    }
 
    &__select-list {
