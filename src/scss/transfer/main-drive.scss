@@ -17,7 +17,7 @@
       margin-top: unset;
    }
    &__wrapper {
-      background-image: url('../../img/transfer-main-driver/head-bg.png');
+      background-image: url('');
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -27,7 +27,7 @@
       }
 
       @media (max-width: 576.98px) {
-         background-image: url('../../img/transfer-main-driver/head-bg-mob.png');
+         background-image: url('');
       }
       &::after {
          content: '';
@@ -305,13 +305,13 @@
       margin-right: auto;
    }
    &__wrapper {
-      background-image: url('../../img/transfer-main-driver/app-bg.png');
+      background-image: url('');
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       min-height: 640px;
       @media (max-width: 576.98px) {
-         background-image: url('../../img/transfer-main-driver/app-bg-mob.png');
+         background-image: url('');
       }
    }
 

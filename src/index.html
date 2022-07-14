@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-   @@include('html/head.html',{ "title":"Главная" })
+   @@include('html/head.html',{ "title":"Разводка" })
    <body>
       @@include('html/header.html',{})
       <main class="main">
@@ -65,6 +65,26 @@
                </li>
             </ul>
          </div>
+         <div class="section blog">
+            <p class="title">BLOG</p>
+            <ul>
+               <li class="item">
+                  <a target="_blank" href="blog-admin-list-articles.html">Админка блог список статей</a>
+               </li>
+               <li class="item">
+                  <a target="_blank" href="blog-admin-sections.html">Админка блог разделы</a>
+               </li>
+               <li class="item">
+                  <a target="_blank" href="blog-admin-add-article.html">Админка блог добавление статьи</a>
+               </li>
+               <li class="item">
+                  <a target="_blank" href="blog-all-articles.html">Все статьи блога</a>
+               </li>
+               <li class="item">
+                  <a target="_blank" href="blog-article.html">Блог статья</a>
+               </li>
+            </ul>
+         </div>
          <div class="section transfer">
             <p class="title">Transfer</p>
             <ul>
@@ -109,6 +129,9 @@
       }
       .transfer {
          background: #ffb703;
+      }
+      .blog {
+         background: #47738a;
       }
       .title {
          font-weight: 600;

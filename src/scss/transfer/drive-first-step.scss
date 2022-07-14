@@ -12,12 +12,12 @@
    grid-template-columns: 1fr 1fr;
    align-items: flex-end;
    grid-gap: 12px 48px;
-   @media (max-width: $mobile) {
+   @media (max-width: 767.98px) {
       grid-template-columns: 1fr;
    }
    &__input-wrap {
       max-width: 550px;
-      @media (max-width: $mobile) {
+      @media (max-width: 767.98px) {
          grid-row: start;
          max-width: none;
       }
@@ -25,7 +25,7 @@
    &__prompt-wrap {
       max-width: 560px;
       transform: translate(0, 7px);
-      @media (max-width: $mobile) {
+      @media (max-width: 767.98px) {
          max-width: none;
          transform: translate(0px, 0px);
       }
@@ -38,7 +38,7 @@
       font-size: 18px;
       line-height: 25px;
       margin-bottom: 11px;
-      @media (max-width: $mobile) {
+      @media (max-width: 767.98px) {
          font-size: 14px;
          line-height: 19px;
       }
@@ -54,7 +54,7 @@
       font-weight: 600;
       font-size: 18px;
       line-height: 22px;
-      @media (max-width: $mobile) {
+      @media (max-width: 767.98px) {
          font-size: 14px;
          line-height: 17px;
       }
@@ -63,7 +63,7 @@
          font-size: 14px;
          line-height: 17px;
          color: rgba(26, 27, 32, 0.6);
-         @media (max-width: $mobile) {
+         @media (max-width: 767.98px) {
             font-size: 12px;
             line-height: 15px;
          }
@@ -75,7 +75,7 @@
       font-size: 14px;
       line-height: 20px;
       letter-spacing: 0.4px;
-      @media (max-width: $mobile) {
+      @media (max-width: 767.98px) {
          font-size: 12px;
          line-height: 20px;
       }
@@ -83,29 +83,27 @@
 }
 
 .prompt {
-   background: rgba(255, 183, 3, 0.3);
-   border-radius: 5px;
-   padding: 10px 21px;
-   font-size: 14px;
-   line-height: 20px;
-   letter-spacing: 0.4px;
-   @media (max-width: $mobile) {
-      font-size: 11px;
-      line-height: 15px;
-      padding: 10px 10px;
-   }
    &__content {
       display: inline-flex;
-      justify-content: center;
       align-items: flex-start;
-      @media (max-width: $mobile) {
+      background: rgba(255, 183, 3, 0.3);
+      border-radius: 5px;
+      padding: 10px 21px;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.4px;
+      width: 100%;
+      @media (max-width: 767.98px) {
+         font-size: 11px;
+         line-height: 15px;
+         padding: 10px 10px;
          align-items: center;
       }
       .icon-info {
          color: #ffb703;
          font-size: 24px;
          margin-right: 12px;
-         @media (max-width: $mobile) {
+         @media (max-width: 767.98px) {
             margin-right: 5px;
          }
       }
@@ -115,7 +113,7 @@
 .input-file {
    &__content {
       max-width: 560px;
-      @media (max-width: $mobile) {
+      @media (max-width: 767.98px) {
          max-width: none;
       }
    }
@@ -129,14 +127,14 @@
       margin-bottom: 15px;
       img {
          border-radius: 4px;
-         object-fit: cover;
+         object-fit: contain;
          width: 100%;
          height: 100%;
       }
-      @media (max-width: $mobile) {
+      @media (max-width: 767.98px) {
          height: 270px;
       }
-      @media (max-width: $mobileSmall) {
+      @media (max-width: 500.98px) {
          height: 200px;
       }
    }
@@ -148,7 +146,7 @@
       border-radius: 4px;
       width: 100%;
       padding: 29px 45px;
-      @media (max-width: $mobile) {
+      @media (max-width: 767.98px) {
          padding: 20px 45px;
       }
    }
@@ -164,7 +162,7 @@
       margin: 0px -35px;
       margin-bottom: 15px;
 
-      @media (max-width: $mobile) {
+      @media (max-width: 767.98px) {
          display: none;
       }
    }
@@ -177,7 +175,7 @@
       @media (max-width: 387px) {
          font-size: 12px;
       }
-      @media (max-width: $mobile) {
+      @media (max-width: 767.98px) {
          display: block;
       }
    }
@@ -203,10 +201,9 @@
    &__head-input {
       width: 1px;
       height: 1px;
-      clip-path: (0 0 0 0);
-      position: absolute;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
       opacity: 0;
-      visibility: hidden;
    }
 }
 
@@ -214,7 +211,7 @@
    &__content {
       max-width: 560px;
       position: relative;
-      @media (max-width: $mobile) {
+      @media (max-width: 767.98px) {
          max-width: none;
       }
    }
@@ -226,7 +223,7 @@
       font-size: 18px;
       line-height: 25px;
       margin-bottom: 10px;
-      @media (max-width: $mobile) {
+      @media (max-width: 767.98px) {
          font-size: 14px;
          line-height: 19px;
       }
@@ -245,6 +242,10 @@
       align-items: center;
       height: 45px;
       padding: 0px 15px;
+      @media (max-width: 767.98px) {
+         font-size: 12px;
+         line-height: 15px;
+      }
       .icon-triangle-down {
          font-size: 24px;
          color: #000000;
@@ -259,6 +260,9 @@
       border-radius: 5px;
       width: 100%;
       z-index: 10;
+      @media (max-width: 767.98px) {
+         top: 78px;
+      }
    }
 
    &__body-list {
@@ -279,17 +283,19 @@
 //========================================================================================================================================================
 
 .transfer-first-step {
-   background: #e0e0e0;
-   height: 10000px;
    &__wrapper {
+      max-width: 1300px;
+      margin: 0 auto;
    }
 
    &__container {
-      max-width: 1300px;
    }
 
    &__content {
-      padding-top: 50px;
+      padding: 50px 0px 162px 0px;
+      @media (max-width: 767.98px) {
+         padding: 21px 0px 46px 0px;
+      }
    }
 
    &__title {
@@ -298,7 +304,7 @@
       line-height: 24px;
       letter-spacing: 0.4px;
       margin-bottom: 22px;
-      @media (max-width: $mobile) {
+      @media (max-width: 767.98px) {
          font-size: 16px;
          line-height: 22px;
          margin-bottom: 15px;
@@ -310,7 +316,7 @@
       line-height: 22px;
       letter-spacing: 0.4px;
       margin-bottom: 32px;
-      @media (max-width: $mobile) {
+      @media (max-width: 767.98px) {
          font-size: 16px;
          line-height: 20px;
          margin-bottom: 11px;
@@ -319,32 +325,32 @@
 
    &__input-name {
       margin-bottom: 22px;
-      @media (max-width: $mobile) {
+      @media (max-width: 767.98px) {
          margin-bottom: 10px;
       }
    }
    &__input-surname {
       margin-bottom: 22px;
-      @media (max-width: $mobile) {
+      @media (max-width: 767.98px) {
          margin-bottom: 10px;
       }
    }
    &__input-phone {
       margin-bottom: 22px;
-      @media (max-width: $mobile) {
+      @media (max-width: 767.98px) {
          margin-bottom: 10px;
       }
    }
    &__input-password {
       margin-bottom: 22px;
-      @media (max-width: $mobile) {
+      @media (max-width: 767.98px) {
          margin-bottom: 10px;
       }
    }
 
    &__input-email {
       margin-bottom: 37px;
-      @media (max-width: $mobile) {
+      @media (max-width: 767.98px) {
          margin-bottom: 10px;
       }
    }
@@ -353,14 +359,14 @@
       grid-template-columns: 1fr 1fr;
       grid-gap: 20px 39px;
       margin-bottom: 30px;
-      @media (max-width: $mobile) {
+      @media (max-width: 767.98px) {
          margin-bottom: 12px;
          grid-template-columns: 1fr;
       }
    }
 
    &__your-photo-input {
-      @media (max-width: $mobile) {
+      @media (max-width: 767.98px) {
          grid-row: start;
       }
    }
@@ -372,7 +378,7 @@
    }
    &__input-passport {
       margin-bottom: 24px;
-      @media (max-width: $mobile) {
+      @media (max-width: 767.98px) {
          margin-bottom: 12px;
       }
    }
@@ -382,13 +388,13 @@
       grid-template-columns: 1fr 1fr;
       grid-gap: 20px 39px;
       margin-bottom: 22px;
-      @media (max-width: $mobile) {
+      @media (max-width: 767.98px) {
          grid-template-columns: 1fr;
       }
    }
 
    &__first-passport-page-input {
-      @media (max-width: $mobile) {
+      @media (max-width: 767.98px) {
          grid-row: start;
       }
    }
@@ -404,7 +410,7 @@
       grid-template-columns: 1fr 1fr;
       grid-gap: 20px 39px;
       margin-bottom: 22px;
-      @media (max-width: $mobile) {
+      @media (max-width: 767.98px) {
          grid-template-columns: 1fr;
       }
    }
@@ -414,7 +420,7 @@
 
    &__input-driving {
       margin-bottom: 24px;
-      @media (max-width: $mobile) {
+      @media (max-width: 767.98px) {
          margin-bottom: 12px;
       }
    }
@@ -424,13 +430,13 @@
       grid-template-columns: 1fr 1fr;
       grid-gap: 20px 39px;
       margin-bottom: 22px;
-      @media (max-width: $mobile) {
+      @media (max-width: 767.98px) {
          grid-template-columns: 1fr;
       }
    }
 
    &__front-driving-input {
-      @media (max-width: $mobile) {
+      @media (max-width: 767.98px) {
          grid-row: start;
       }
    }
@@ -446,7 +452,7 @@
       grid-template-columns: 1fr 1fr;
       grid-gap: 20px 39px;
       margin-bottom: 30px;
-      @media (max-width: $mobile) {
+      @media (max-width: 767.98px) {
          grid-template-columns: 1fr;
          margin-bottom: 20px;
       }
@@ -458,7 +464,7 @@
    &__select-country {
       .temp-select__head {
          margin-bottom: 25px;
-         @media (max-width: $mobile) {
+         @media (max-width: 767.98px) {
             margin-bottom: 10px;
          }
       }
@@ -467,14 +473,14 @@
    &__select-city {
       .temp-select__head {
          margin-bottom: 50px;
-         @media (max-width: $mobile) {
+         @media (max-width: 767.98px) {
             margin-bottom: 30px;
          }
       }
    }
    &__next-wrap {
       max-width: 280px;
-      @media (max-width: $mobile) {
+      @media (max-width: 767.98px) {
          max-width: 345px;
          margin: 0 auto;
       }
@@ -491,7 +497,7 @@
       text-transform: uppercase;
       color: #ffffff;
       padding: 14px 0px;
-      @media (max-width: $mobile) {
+      @media (max-width: 767.98px) {
          padding: 9px 0px;
       }
    }
