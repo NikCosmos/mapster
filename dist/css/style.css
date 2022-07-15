@@ -7090,19 +7090,11 @@ body {
   height: 50px;
 }
 
-.state {
+.select-section {
   position: relative;
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
-  padding-bottom: 25px;
 }
 
-.state__title {
-  font-size: 15px;
-  line-height: 20px;
-  margin-bottom: 11px;
-}
-
-.state__head {
+.select-section__head {
   background: #ffffff;
   border: 1px solid rgba(26, 27, 32, 0.6);
   border-radius: 5px;
@@ -7119,20 +7111,21 @@ body {
   height: 50px;
 }
 
-.state__head .icon-triangle-down-line {
+.select-section__head .icon-triangle-down-line {
   font-size: 14px;
 }
 
-.state__body {
+.select-section__body {
   display: none;
   background: #ffffff;
   border-radius: 5px;
   position: absolute;
   width: 100%;
-  top: 85px;
+  top: 55px;
+  z-index: 50;
 }
 
-.state__option {
+.select-section__option {
   height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7143,7 +7136,65 @@ body {
   padding: 0px 18px;
 }
 
-.state__option:hover {
+.select-section__option:hover {
+  background: #ececec;
+}
+
+.select-state {
+  position: relative;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  padding-bottom: 25px;
+}
+
+.select-state__title {
+  font-size: 15px;
+  line-height: 20px;
+  margin-bottom: 11px;
+}
+
+.select-state__head {
+  background: #ffffff;
+  border: 1px solid rgba(26, 27, 32, 0.6);
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 12px;
+  height: 50px;
+}
+
+.select-state__head .icon-triangle-down-line {
+  font-size: 14px;
+}
+
+.select-state__body {
+  display: none;
+  background: #ffffff;
+  border-radius: 5px;
+  position: absolute;
+  width: 100%;
+  top: 85px;
+  z-index: 50;
+}
+
+.select-state__option {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 18px;
+}
+
+.select-state__option:hover {
   background: #ececec;
 }
 

@@ -263,8 +263,47 @@
       height: 50px;
    }
 }
+.select-section {
+   position: relative;
+   &__head {
+      background: #ffffff;
+      border: 1px solid rgba(26, 27, 32, 0.6);
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 12px;
+      height: 50px;
+      .icon-triangle-down-line {
+         font-size: 14px;
+      }
+   }
 
-.state {
+   &__head-text {
+   }
+
+   &__body {
+      display: none;
+      background: #ffffff;
+      border-radius: 5px;
+      position: absolute;
+      width: 100%;
+      top: 55px;
+      z-index: 50;
+   }
+
+   &__option {
+      height: 50px;
+      display: flex;
+      align-items: center;
+      padding: 0px 18px;
+      &:hover {
+         background: #ececec;
+      }
+   }
+}
+
+.select-state {
    position: relative;
    border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
    padding-bottom: 25px;
@@ -298,6 +337,7 @@
       position: absolute;
       width: 100%;
       top: 85px;
+      z-index: 50;
    }
 
    &__option {
